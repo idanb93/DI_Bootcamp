@@ -73,7 +73,18 @@ footer {
 }
 
 .shirts div {
+    text-align: center;
+    align-content: center;
     display: inline-block;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.add-to-cart {
+    height: 32px;
+    width: 100px;
+    color: rgb(110, 104, 104);
+    background-color: white;
+    border: 1px solid rgb(110, 104, 104);
+    border-radius: 4px;
 }

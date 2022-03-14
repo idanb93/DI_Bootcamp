@@ -11,20 +11,18 @@ nav a {
     font-size: large;
     color: black;
     font-weight: bold;
-    padding: 20px;
-    align-content: center;
+    /* padding: 20px; */
     text-decoration: none;
 }
 
 li {
     display: inline-block;
     float: right;
-    /* margin: 10px; */
+    margin: 10px;
     margin-top: auto;
-    margin-bottom: auto;
 }
 
-img {
+.hat-logo {
     position: absolute;
     height: 50px;
     width: 50px;
@@ -33,6 +31,35 @@ img {
     margin-top: 0px;
     border-radius: 15px;
     background-color: aliceblue;
+}
+
+.air-jordan-sale {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    float: left;
+    padding: 0px;
+    margin-top: 0px;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+.vans-tank-top-sale {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    float: left;
+    padding: 0px;
+    margin-top: 0px;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+.cart-img {
+    align-content: center;
+    position: relative;
+    margin-bottom: 10px;
+    /* margin: -10px 5px 10px 10px; */
 }
 
 .outer-sale-box {
