@@ -1,0 +1,44 @@
+nav {
+    /* width: 100%; */
+    position: relative;
+    height: 93px;
+    color: white;
+    background-color: black;
+    border-bottom: 2px solid white;
+}
+
+li {
+    float: right;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    display: inline-block;
+    padding: 30px 30px;
+}
+
+a {
+    font: large;
+    color: white;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color: #044BF0;
+}
+
+.logo {
+    float: left;
+}
+
+section {
+    height:100%;
+    min-height:100%;
+    width:100%;
+    color: rgb(48,69,151);
+    /* opacity: 0.8; will make the picture a bit brighter */
+    position: absolute;
+    background-image: url("..\\img\\408920.png");
+	background-size: cover;
+    background-repeat: no-repeat;
+}
