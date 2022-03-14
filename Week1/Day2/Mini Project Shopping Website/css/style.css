@@ -1,13 +1,13 @@
 nav {
     height: 50px;
     width: 100%;
-    border-radius: 10px;
-    border: 3px solid black;
+    border-radius: 20px;
+    border: 3px solid rgb(63, 61, 61);
     position: relative;
 
 }
 
-a {
+nav a {
     font-size: large;
     color: black;
     font-weight: bold;
@@ -33,4 +33,53 @@ img {
     margin-top: 0px;
     border-radius: 15px;
     background-color: aliceblue;
+}
+
+.outer-sale-box {
+    margin-top: 20px;
+    height: 200px;
+    width: 650px;
+    margin-left: 45px;
+    margin-right: 45px;
+    background-color: yellow;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.outer-sale-box a {
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    align-content: center;
+    text-decoration: none;
+}
+
+.inner-sale-box {
+    text-align: center;
+    font-size: large;
+    margin-top: 20px;
+    height: 160px;
+    width: 320px;
+    margin-left: 45px;
+    margin-right: 45px;
+    background-color: white;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+
+.inner-sale-box a {
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    align-content: center;
+    text-decoration: none;
+}
+
+.outer-sale-box img {
+    height: 150px;
+    width: 230px;
 }
