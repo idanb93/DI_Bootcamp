@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\css\signup.css">
+    <link rel="stylesheet" href="..\css\login-signup.css">
     <title>Sign Up</title>
 </head>
 
@@ -23,20 +23,25 @@
     <section>
 
         <form action="#">
-            <div class="signup-form">
+            <div class="container">
                 <h1>Sign Up</h1>
-                    <label for="username">Username:</label>
-                    <input type="text" required>
+                <label for="firstname">First name:</label>
+                <input type="text" required>
 
-                    <label for="password">Password:</label>
-                    <input type="password" required>
+                <label for="lastname">Last name:</label>
+                <input type="text" required>
 
-                    <label for="verify-password">Verify Password:</label>
-                    <input type="password" required>
+                <label for="username">Username:</label>
+                <input type="text" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" required>
-                </li>
+                <label for="password">Password:</label>
+                <input type="password" required>
+
+                <label for="email">Email:</label>
+                <input type="email" required>
+
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
             </div>
         </form>
     </section>
