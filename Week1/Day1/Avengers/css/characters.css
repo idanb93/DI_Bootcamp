@@ -1,0 +1,64 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+nav {
+    position: relative;
+    height: 93px;
+    color: white;
+    background-color: black;
+    border-bottom: 2px solid white;
+}
+
+li {
+    float: right;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    display: inline-block;
+    padding: 30px 30px;
+}
+
+a {
+    font: large;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #044BF0;
+}
+
+.logo {
+    float: left;
+}
+
+.character {
+    border: 0.3px solid black;
+    /* border-radius: 15px; */
+    margin: 50px 50px 50px 50px;
+    align-content: center;
+    display: inline-block;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
+}
+
+footer p {
+    font-size: large;
+    font-weight:300;
+}
+
+section {
+    height:100%;
+    min-height:100%;
+    width:100%;
+    color: rgb(48,69,151);
+    position: absolute;
+    background-image: url("..\\img\\IADX10-065.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+}
