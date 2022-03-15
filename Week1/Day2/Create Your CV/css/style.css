@@ -1,0 +1,79 @@
+.cv-container {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    border: 2px solid black;
+    background-color: rgb(198, 253, 255);
+    
+}
+
+.cv-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cv-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.contact-education {
+    /* width: 75%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+
+}
+
+.profile-work-experince {
+/* align-self: stretch; */
+}
+
+.profile-picture img {
+    height: 120px;
+    width: 180px;
+    border-radius: 80px;
+}
+
+.name-profession {
+    align-self: flex-start;
+}
+
+.profile-picture {
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.cato-networks {
+    color: rgb(2, 109, 2);
+    text-shadow: 0px 1px 1px black;
+}
+
+.contact {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+}
+
+.contact-icon {
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+
+@media all and (max-width: 480px) {
+    
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact img{
+    float: left;
+}
