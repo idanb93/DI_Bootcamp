@@ -1,0 +1,17 @@
+.last-sidebar-item {
+    text-align: center;
+}
+
+.search-recipes-button {
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px 1px white;
+    background-color: rgb(40, 40, 206);
+    border-radius: 10px;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+    margin: 10px 20px 10px 20px;
+}
