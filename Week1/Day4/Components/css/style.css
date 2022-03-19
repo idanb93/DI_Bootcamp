@@ -1,0 +1,75 @@
+body {
+    height: 100vh;
+}
+
+.navbar-brand {
+    text-align: center;
+}
+
+.btn-outline-success-test {
+    width: 12vw;
+    color: white;
+    background-color: rgb(68, 175, 68);
+}
+
+.btn-outline-success-test:hover{
+    background-color: rgb(68, 175, 68);
+}
+
+.container-fluid {
+    height: 7vh;
+    margin-top: 25px;
+    position: fixed;
+    background-color: grey;
+}
+
+header {
+    background-color: rgb(214, 210, 210);
+    width: 100vw;
+    height: 15vh;
+    text-align: left center;
+    margin-top: 30px;
+}
+
+.btn-primary {
+    color: primary;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.heading-columns-buttons {
+    size: medium;
+    border: 1px solid grey;
+    background-color: white;
+    color: grey;
+    border-radius: 10px;
+}
+
+img {
+    height: 15px;
+    width:15px;
+}
+
+.w3-btn {
+    font-size: 30px;
+    height: 5vh;
+    width: 5vw;
+    color: white;
+    background-color: rgb(103, 220, 255);
+    border-radius: 10px;
+    float: right;
+}
+
+.w3-badge {
+    color: white;
+    background-color: rgb(78, 75, 75);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.third-heading {
+    margin: 0;
+    display: inline-block;
+}
