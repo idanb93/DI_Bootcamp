@@ -30,7 +30,7 @@ if (building['numberOfRoomsAndRent']['sarah'][1] +
     building['numberOfRoomsAndRent']['david'][1] >
     building['numberOfRoomsAndRent']['dan'][1]) {
 
-    building['numberOfRoomsAndRent']['dan'][1] += 1200;
+    building['numberOfRoomsAndRent']['dan'][1] += (1200-building['numberOfRoomsAndRent']['dan'][1]);
 }
 
 console.log(building['numberOfRoomsAndRent']['dan'][1]);
