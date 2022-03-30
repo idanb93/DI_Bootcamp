@@ -8,6 +8,7 @@ submitButton.onclick = addTask;
 console.log(listTasksDiv);
 
 function addTask(event){
+
     let userInput = document.getElementById('userInput').value;
     event.preventDefault();
 
@@ -23,15 +24,9 @@ function addTask(event){
         let newCheckbox = document.createElement('input');
         newCheckbox.setAttribute('type', 'checkbox');
 
-        if (newCheckbox.checked == 'true'){
-            console.log('hello');
-            newDiv.textContent.style.color = 'red';
-        }
-
-        // newCheckbox.addEventListener('checked', function (){
-        //     console.log('hello');
-        //     newDiv.textContent.style.color = 'red';
-        // })
+        newCheckbox.addEventListener('change', function(event){
+            newDiv.className += ' done';
+        })
 
         let newImage = document.createElement('img');
         newImage.setAttribute('src', '..\\img\\rectangle-xmark-solid.svg');
