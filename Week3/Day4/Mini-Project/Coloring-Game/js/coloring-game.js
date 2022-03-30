@@ -19,6 +19,7 @@ let body = document.getElementsByTagName('body')[0];
 
 let color = null; // the color the user choosed
 let mousedown = false;
+let main_divs = [];
 
 for (let i = 0; i < color_count; i++) {
     let div = document.createElement('div');
@@ -41,6 +42,7 @@ for (let i = 0; i < main_count; i++) {
             event.target.style.backgroundColor = color;
         }
     });
+    main_divs.push(div);
     main.appendChild(div);
 }
 
@@ -50,6 +52,12 @@ body.addEventListener('mousedown', function(event){
 
 body.addEventListener('mouseup', function(event){
     mousedown = false;
+})
+
+clear.addEventListener('click', function(){
+    for (let div of main_divs){
+        div.style.backgroundColor = 'white';
+    }
 })
 
 function generateRandomColor() {
