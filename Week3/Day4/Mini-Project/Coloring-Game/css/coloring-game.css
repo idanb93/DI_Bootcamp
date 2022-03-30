@@ -1,0 +1,93 @@
+/* * {
+    box-sizing: border-box;
+}
+
+#color-menu{
+    height: 100vh;
+    width: 20%;
+    left: 0px;
+    display: grid;
+    grid-column: 1fr 1fr 1fr ;
+    grid-row: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    background-color: grey;
+}
+
+#clear-button{
+    height: 12vh;
+    width: 100%;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.color-box{
+    height: 12vh;
+    width: 33.3%;
+    border: 1px solid black;
+    margin: 2px 2px 2px 2px;
+}
+
+.row-of-boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+
+/* body {
+    background-color: darkgrey;
+} */
+
+
+/* let letters = '0123456789ABCDEF'; */
+/* let color = '#'; */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+#sidebar > * {
+    border: 1px solid #000;
+}
+
+#sidebar {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    height: 100vh;
+    width: 20%;
+    float: left;
+
+    padding: 5px;
+}
+
+#clear{
+    grid-column: 1 / span 3;
+    border-radius: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#main > * {
+    border: 0.5px solid grey;
+    background-color: white;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: repeat(60, 1fr);
+    grid-gap: 0.5px;
+
+    height: 100vh;
+    width: 80%;
+    color: white;
+}
