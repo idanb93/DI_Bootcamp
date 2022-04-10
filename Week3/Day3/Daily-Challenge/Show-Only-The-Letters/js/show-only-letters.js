@@ -1,12 +1,4 @@
 
-let inputLabel = document.createElement('label');
-inputLabel.textContent = "Please enter some letters: ";
-document.body.appendChild(inputLabel);
-
-let input = document.createElement('input');
-input.setAttribute('pattern', "/^[a-zA-Z]+$/");
-document.body.appendChild(input);
-
 
 // input.onkeyup = keyup;
 
@@ -14,10 +6,32 @@ document.body.appendChild(input);
 //     this.value = this.value.replace(/^[a-zA-Z]+$/,'');  
 // }
 
-let submitButton = document.createElement('button');
-submitButton.setAttribute('type', 'submit');
-submitButton.textContent = 'Submit';
-submitButton.style.marginLeft = '10px';
-submitButton.style.height = '20px';
-submitButton.style.width = '70px';
-document.body.appendChild(submitButton);
+(function createPage() {
+
+    let inputLabel = document.createElement('label');
+    inputLabel.textContent = "Please enter some letters: ";
+    document.body.appendChild(inputLabel);
+
+    let input = document.createElement('input');
+    document.body.appendChild(input);
+
+    input.addEventListener('keyup', (event)=>{
+
+        for (let i = 0; i < (input.value).length; i++ ){
+            if ( (input.value).charCodeAt(i) < 48 || (input.value).charCodeAt(i) > 90){
+                console.log((input.value).charCodeAt(i));
+            }
+        }
+    })
+
+    let submitButton = document.createElement('button');
+    submitButton.setAttribute('type', 'submit');
+    submitButton.textContent = 'Submit';
+
+    submitButton.style.marginLeft = '10px';
+    submitButton.style.height = '20px';
+    submitButton.style.width = '70px';
+
+    document.body.appendChild(submitButton);
+
+})();
