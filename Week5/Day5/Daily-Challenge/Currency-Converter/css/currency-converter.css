@@ -1,0 +1,155 @@
+a {
+	margin: 0px 0px 0px 16px;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	font-size: 24px;
+	text-decoration: none;
+	height: 56px;
+	padding-bottom: 4px;
+	border-top-color: rgb(0, 129, 235);
+	border-color: rgb(0, 129, 235);
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	color: whitesmoke;
+	text-align:center;
+}
+
+h2 {
+	color: white;
+	text-align:center;
+}
+
+p {
+	color: whitesmoke;
+}
+
+option {
+	text-align: center;
+}
+
+.fa {
+	color: white;
+	position: relative;
+	top: 20px;
+}
+
+#amount{
+	border: none;
+	background-color: #242631;
+	color: white;
+	font-size: 20px;
+	margin: 30px 10px 0px 10px;
+	width: 80px;
+	border: 1px solid white;
+	padding: 3px 3px 3px 3px;
+}
+
+#selectYourCurrency {
+	position: absolute;
+	margin: 30px 15px 30px 140px;
+	text-align: center;
+    padding: 2px 2px 2px 2px;
+    font-size: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: none;
+    font-smooth: always;
+	background: #35414a;
+	color: white;
+	border-radius: 10px;
+}
+
+#selectYourCurrency:hover {
+	background: #616478;
+    cursor: pointer;
+
+}
+
+#selectWhatCurrencyYouWant {
+	text-align: center;
+	margin: 25px 10px 25px 335px;
+    padding: 2px 2px 2px 2px;
+    font-size: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: none;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    font-feature-settings: 'ss01' on,'ss02' on,'cv01' on,'cv03' on;
+	background: #35414a;
+	color: white;
+	border-radius: 10px;
+	float: right;
+
+}
+
+#selectWhatCurrencyYouWant:hover {
+	background: #616478;
+    cursor: pointer;
+}
+
+#outerSwapWindow{
+	height: 300px;
+	width: 440px;
+	padding: 10px;
+	margin-top: 80px;
+	border-radius: 10px;
+	background-color: #0F1226;
+	border: 2px solid white;
+	box-shadow: whitesmoke;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+#innerSwapWindow {
+	height: 80px;
+	margin-top: 30px;
+	background-color: #242631;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+#innerSwapWindow2 {
+	height: 80px;
+	background-color: #242631;
+	border: 2px solid white;
+	border-radius: 10px;
+	margin-top: 5px;
+}
+
+.conversion {
+	margin-top: 5px;
+    margin-right: auto;
+	margin-left: auto;
+	height: 45px;
+	width: 440px;
+	border-radius: 10px;
+	border: 3px solid white;
+	color: white;
+	background: #35414a;
+    cursor: pointer;
+}
+
+.conversion:hover{
+    background: #616478;
+
+}
+
+#connectWalletSwapWindow:hover {
+	background: #616478;
+}
+
+#actionSwap {
+	color: white;
+	float: left;
+	font-size: 20px;
+}
+
+a:hover {
+	color: #F06D00;
+	border: 3px white;
+}

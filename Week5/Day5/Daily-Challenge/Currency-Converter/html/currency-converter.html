@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\css\currency-converter.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="outerSwapWindow">
+		<span id="actionSwap">
+			Exchange
+		</span>
+
+		<div id="innerSwapWindow">
+			<aside>
+				<input id='amount' type="text">
+				<select name="selectYourCurrency" id="selectYourCurrency">
+					<option value="selectYourCurrency">Select the currency</option>
+				</select>
+			</aside>
+		</div>
+		<div id="innerSwapWindow2">
+			<div id='spinner' hidden="true">
+				<i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+			</div>
+			<select name="selectWhatCurrencyYouWant" id="selectWhatCurrencyYouWant">
+				<option value="selectToken">Select the currency</option>
+			</select>
+		</div>
+		<div>
+			<button class="conversion">Estimate Conversion</button>
+			<button class="conversion">Convert Currency</button>
+		</div>
+	</div>
+    
+    <script type="text/javascript" src="..\js\currency-converter.js"></script>
+</body>
+</html>
