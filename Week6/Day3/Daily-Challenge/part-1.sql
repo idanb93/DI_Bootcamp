@@ -20,8 +20,18 @@ CREATE TABLE Customer (
 CREATE TABLE Customer_profile (
 	id SERIAL PRIMARY KEY,
 	isLoggedIn BOOLEAN DEFAULT false,
-	customer_id INTEGER REFERENCES Customer (id)
+	customer_id INTEGER REFERENCES Customer (id) ON DELETE CASCADE ON UPDATE CASCADE
 )
+
+ALTER TABLE Customer_profile 
+  ADD CONSTRAINT fk_name 
+  FOREIGN KEY (customer_id) 
+  REFERENCES Customer(id) 
+  ON DELETE CASCADE;
+  
+ALTER TABLE Customer_profile
+DROP CONSTRAINT customer_profile_customer_id_fkey
+
 
 INSERT INTO Customer (first_name, last_name)
 VALUES
