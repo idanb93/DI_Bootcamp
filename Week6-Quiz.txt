@@ -199,13 +199,13 @@ let newArray = input.map((ele)=>ele * ele);
      console.log(total) //42
      ```
 ///////////////////////////////////////////
-let total = secondInput.sort().reduce( function(accumulator, currentValue){
-    if (currentValue > 0){
-        return accumulator += currentValue;
-    } else {
-        return accumulator += 0;
-    }
-}, 0);
+let total =
+
+secondInput
+.filter((num)=>num > 0)
+.reduce( (accumulator, currentValue)=>accumulator += currentValue);
+
+console.log(total);
 ///////////////////////////////////////////
 ​
 17. Use 3 javascript methods and chain them to abbreviate the name and return the name initials.
@@ -252,9 +252,10 @@ class Item {
     constructor(name, price){
         this.name = name;
         this.price = price;
-        this.displayInfo = function (){
-            console.log(this.name + "is for $" + this.price);
-        }
+    }
+
+    displayInfo = function(){
+        console.log(this.name + "is for $" + this.price);
     }
 }
 ///////////////////////////////////////////
