@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Task</title>
+    <link rel="stylesheet" href="..\css\add-task.css">
+</head>
+<body>
+    <div id="enter-task">        
+        <h1>Add a new Task: </h1>
+        <form action="#">
+    
+            <div>
+                <label for="name">Name: </label>
+                <input id="name" type="text">
+            </div>
+            <br>
+            <div>
+                <label for="description">Description: </label>
+                <input id="description" type="text">
+            </div>
+            <br>
+            <div>
+                <label for="starting-time">Starting Time: </label>
+                <input id="starting-time" type="datetime-local">
+            </div>
+            <br>
+            <div>
+                <label for="ending-time">Ending Time: </label>
+                <input id="ending-time" type="datetime-local">
+            </div>
+            <br>
+            <div>
+                <button id='submit-button' type="submit">Submit</button>
+                <a href="current-tasks.html">
+                    <button id='goto-current-tasks' type="button">Go to Current Tasks</button>
+                </a>
+            </div>
+            
+        </form>
+    </div>
+
+    <script type="text/javascript" src="..\js\add-task.js"></script>
+</body>
+</html>

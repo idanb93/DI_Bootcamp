@@ -1,0 +1,16 @@
+
+body {
+    align-content: center;
+}
+
+#enter-task {
+
+    width: 20vw;
+    height: 30vh;
+    
+    border: 1px solid black;
+
+    position: relative;
+    left: 35vw;
+    top: 30vh;
+}
