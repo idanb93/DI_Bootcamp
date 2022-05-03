@@ -11,14 +11,13 @@ app.listen(3000, ()=>{
     console.log('Server is listening on port 3000');
 })
 
+// Serving the static files in the public folder
+
 app.use('/', express.static(__dirname+'/public'));
 
-// Creating endpoints
+// Creating routes
 
-app.get('/', (req, res)=>{
-    // console.log(user);
-    // const {firstname, lastname} = user;
-    // res.status(200).send(`${firstname} ${lastname}`);
-    res.send(JSON.stringify(user));
+app.get('/users', (req, res)=>{
+    res.json(user);
     res.end();
 })
