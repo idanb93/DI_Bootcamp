@@ -1,0 +1,13 @@
+<% allFacts.forEach((fact)=>{ %>
+   <div class="">
+       <a style="cursor: pointer;" href=<%= fact.link %>>
+           <%= fact.title %>
+       </a>
+       <h4>Publication Date: <%= fact.pubDate %></h4>
+       <h4>Creator: <%= fact.creator %></h4>
+       <% fact.categories.forEach((category)=>{ %>
+         <h4>Category: <%= category %></h4>
+       <% }) %>
+       <%- fact.content %>      
+   </div>
+<% }) %>
