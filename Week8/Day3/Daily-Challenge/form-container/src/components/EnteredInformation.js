@@ -1,33 +1,35 @@
 import react from "react";
+import FormComponent from "./FormComponent";
 
 class EnteredInformation extends react.Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-
-        }
+            firstName: "",
+            lastName: "",
+            age: "",
+            gender: "",
+            destination: "",
+            nutsFree: false,
+            lactoseFree: false,
+            isVegan: false
+        };
+        this.handleChange = this.handleChange.bind(this);
     }
 
+    handleChange(e) {
+        const { value, name, type, checked } = e.target;
+    
+        type === "checkbox"
+          ? this.setState({ [name]: checked })
+          : this.setState({ [name]: value });
+      }
+
     render() {
+
         return (
-            <div>
-                Your name: 
-                <br/>
-                <br/>
-                Your age: 
-                <br/>
-                <br/>
-                Your gender: 
-                <br/>
-                <br/>
-                Your Destination: 
-                <br/>
-                <br/>
-                Your dietary restrictions: 
-
-            </div>
-
+            <FormComponent handleChange={this.handleChange} {...this.state}/>
         )
     }
 }

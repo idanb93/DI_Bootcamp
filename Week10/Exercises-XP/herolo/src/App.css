@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+
+  background-color: whitesmoke;
+  /* min-height: 100vh;
+  width: 100vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#navbar {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 10vh;
+  width: 100vw;
+
+  background-color: #282c34;
+}
+
+.navbar-brand {
+
+  text-decoration: none;
+  color: whitesmoke;
+
+  margin-left: 2vh;
+}
+
+.navbar-brand:hover {
+  color: grey;
+}
+
+#main-section {
+  margin-top: 5vh;
+  
+  height: 80vh;
+  width: 70vw;
+
+  background-color: white;
+
+  border: 1px solid black;
+}
+
+#forecast-container {
+
+  height: 50vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  margin-top: 10vh;
+}
+
+.day-container {
+  height: 40vh;
+  width: 28vw;
+
+  border: 0.2vh solid black;
+
+  margin: 2vh 2vh 2vh 2vh;
+}
+
+#current-weather-container {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#add-to-favorites {
+  
+  height: 6vh;
+  width: 14vw;
+
+  margin-right: 5vh;
+
+  background-color: whitesmoke;
+  
+  border: 0.2vh solid black;
+
+}
+
+#city-current-weather {
+  margin-left: 5vh;
+}
+
+#favorites {
+
+  height: 100%;
+  width: 80vw;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-gap: 5vh;
+
+  border: 0.2vh solid black;
+
+}
+
+.favorite-city {
+
+  height: 30vh;
+  width: 15vw;
+
+  color: black;
+  border: 0.2vh solid black ;
+
+  margin-top: 5vh;
+}
